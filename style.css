@@ -1,0 +1,120 @@
+.header {
+    background-color: rgb(255, 255, 255);
+    /* border: 1px solid black; */
+    width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.content {
+    width: max-content;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo {
+    width: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+    margin-top: -20px;
+    margin: 0 auto !important;
+}
+
+.course {
+    width: auto;
+    margin-top: -20px;
+}
+
+.course p {
+    font-size: 22px;
+    font-weight: 500;
+    color: #3c3e8d;
+}
+
+.slogan {
+    width: auto;
+    text-align: center;
+    color: rgba(60, 62, 141, 0.8);
+    margin-top: -10px;
+}
+
+.btns {
+    display: flex;
+    justify-content: center;
+}
+
+.btns button {
+    border: none;
+    outline: none;
+    padding: 10px;
+    border-radius: none !important;
+    margin-top: -20px;
+}
+
+.btn1 {
+    margin-left: 10px;
+    background-color: rgba(226, 226, 226, 0.2);
+    border-radius: none !important;
+    height: auto;
+    font-size: small;
+    color: #3c3e8d;
+}
+
+.btn1:focus {
+    color: #2aacb5;
+}
+
+.row-check {
+    display: flex;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.col {
+    text-align: left;
+    margin: 8px;
+    padding: 5px;
+}
+
+.input {
+    width: 100%;
+    padding: 8px;
+}
+
+input {
+    border: 1px solid #30c5cf;
+    border-radius: 3px;
+    font-size: 15px;
+}
+
+label {
+    color: #2d2e7a;
+    font-size: small;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #3c3e8d;
+}
+
+::placeholder {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+select {
+    border: 1px solid #30c5cf;
+}
+
+select:focus {
+    outline: none;
+    border: 1px solid #3c3e8d;
+}
