@@ -52,6 +52,7 @@
 .btns {
     display: flex;
     justify-content: center;
+    margin-top: 50px;
 }
 
 .btns button {
@@ -148,4 +149,66 @@ hr {
 
 ol li {
     font-size: medium;
+}
+
+.slogan>small {
+    font-weight: 500;
+    font-size: large;
+}
+
+.id-card {
+    width: 370px;
+    height: 520px;
+    margin: 0 auto;
+    background-image: url('/assets/card-bg.jpeg');
+    background-size: cover;
+    /* object-fit: contain; */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.id-card-space {
+    margin-bottom: 50px;
+    display: none;
+}
+
+.dp {
+    width: 170px;
+    height: 150px;
+    border: 1px solid #3c3e8d;
+    margin-bottom: 20px;
+}
+
+.dp>img {
+    width: 100%;
+    height: 100%;
+}
+
+.card>p {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bold;
+    /* color: #3c3e8d; */
+    color: #353695;
+}
+
+.retBtn1 {
+    margin-left: 20px;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    /* background-color: rgb(0, 143, 253); */
+}
+
+.retBtn1:active {
+    transform: translateY(5px);
+    border: none !important;
+    outline: none !important;
+}
+
+.retBtn1:focus {
+    border: none !important;
+    outline: none !important;
 }
