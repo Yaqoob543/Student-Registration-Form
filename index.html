@@ -8,6 +8,7 @@
     <title>Student Registration Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -29,43 +30,41 @@
         <br>
         <!-- Front Home Page button-->
         <div class="btns">
-            <button class="btn1">New Application</button>
-            <button class="btn1">Download ID Card</button>
+            <button onclick="disform()" class="btn1" id="form1">New Application</button>
+            <button onclick="idCard()" class="btn1" id="downloadCard">Download ID Card</button>
         </div>
         <hr>
         <!-- Form-->
-
-        <form>
+        <form id="form">
             <div class="row-check">
                 <div class="col">
                     <label>Full Name</label>
                     <br>
-                    <input class="input" placeholder="Full Name" type="text">
+                    <input class="input" id="name" placeholder="Full Name" type="text">
                 </div>
                 <div class="col">
                     <label>Father Name</label>
                     <br>
-                    <input class="input" placeholder="Father Name" type="text">
+                    <input class="input" id="father" placeholder="Father Name" type="text">
                 </div>
             </div>
             <div class="row-check">
                 <div class="col">
                     <label>Email Address</label>
                     <br>
-                    <input placeholder="Email Address" class="input" type="text">
+                    <input placeholder="Email Address" id="email" class="input" type="text">
                 </div>
                 <div class="col">
                     <label>Phone</label>
                     <br>
-                    <input placeholder="Phone Number" class="input" type="text">
+                    <input placeholder="Format : 03xxxxxxxxx" id="number" class="input" type="text">
                 </div>
             </div>
             <div class="row-check">
                 <div class="col">
                     <label>Select City</label>
                     <br>
-                    <!-- <input class="input" type="text"> -->
-                    <select class="input">
+                    <select id="city" class="input" required>
                         <option disabled selected></option>
                         <option >Karachi</option>
                         <option>Lahore</option>
@@ -76,7 +75,7 @@
                 <div class="col">
                     <label>Select Course</label>
                     <br>
-                    <select class="input">
+                    <select class="input" id="courses" required>
                         <option disabled selected></option>
                         <option>Web & Mobile</option>
                         <option>Graphic Designing</option>
@@ -87,14 +86,14 @@
             </div>
             <div class="row-check">
                 <div class="col">
-                    <label>Date of Birth</label>
+                    <label>CNIC</label>
                     <br>
-                    <input placeholder="Select Date" class="input" type="date">
+                    <input placeholder="Enter CNIC" class="input" type="text" id="cnic">
                 </div>
                 <div class="col">
                     <label>Select Gender</label>
                     <br>
-                    <select class="input">
+                    <select id="gender" class="input">
                         <option disabled selected ></option>
                         <option>Male</option>
                         <option>Female</option>
@@ -106,46 +105,65 @@
                 <div class="col">
                     <label>Address</label>
                     <br>
-                    <input placeholder="Address" class="input" type="text">
+                    <input placeholder="Address" class="input" type="text" id="add">
                 </div>
             </div>
-            <div class="row-check">
-                <div class="col">
-                    <label>Last Qualification</label>
-                    <br>
-                    <input placeholder="Last Qualification" class="input" type="text">
-                </div>
+            <div class="col">
+                <label>Last Qualification</label>
+                <br>
+                <select id="qualification" class="input" required>
+                    <option disabled selected ></option>
+                    <option>Matric</option>
+                    <option>Intermediate</option>
+                    <option>Under Graduate</option>
+                    <option>Graduate</option>
+                    <option>Masters</option>
+                </select>
             </div>
             <div class="row-check">
                 <div class="col">
                     <label>Picture</label>
                     <br>
-                    <input class="input file" type="file">
+                    <input class="input file" id="picture" type="file">
+
                 </div>
             </div>
-
-
+            <div class="row-check">
+                <small>
+                        <ol style="width: 80%;" >
+                            <li> hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
+                            <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</li>
+                            <li>Defiance will render my admission canceled at any point in time.</li>
+                            <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
+                        </ol>
+                    </small>
+            </div>
+            <div class="row-check">
+                <div class="col">
+                </div>
+            </div>
+            <submit onclick="getData()" type="submit" class="btn btn-primary">Submit</submit>
         </form>
-
-
-
-
     </div>
 
+    <!-- ID Card HTML -->
 
+    <div class="container">
+        <div class="card2" id="card">
+            <div class="row-check">
+                <div class="col">
+                    <label>CNIC</label>
+                    <br>
+                    <input placeholder="Enter CNIC" class="input" type="text" id="cnic2">
+                </div>
+            </div>
+            <submit type="submit" id="cardBtns" onclick="checkCard()" class="btn btn-primary">Submit</submit>
 
-
-
-
-
-
-
-
-
-
-
+        </div>
+    </div>
 
     <script src="https://kit.fontawesome.com/2ab38ab271.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
@@ -153,12 +171,3 @@
 </body>
 
 </html>
-
-<!-- <div class="form-group">
-            <label for=""></label>
-            <select class="form-control" name="" id="">
-            <option></option>
-            <option></option>
-            <option></option>
-          </select>
-                </div> -->

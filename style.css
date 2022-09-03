@@ -1,5 +1,8 @@
 .header {
     background-color: rgb(255, 255, 255);
+    /* background-image: url('assets/bg1.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
     /* border: 1px solid black; */
     width: 100%;
     height: auto;
@@ -21,8 +24,8 @@
 }
 
 .logo img {
-    width: 100px;
-    height: 100px;
+    width: 150px;
+    height: 150px;
     margin-top: -20px;
     margin: 0 auto !important;
 }
@@ -69,6 +72,10 @@
 
 .btn1:focus {
     color: #2aacb5;
+    background-color: white;
+    border-top: 2px solid rgba(226, 226, 226, 0.2);
+    border-right: 2px solid rgba(226, 226, 226, 0.2);
+    border-left: 2px solid rgba(226, 226, 226, 0.2);
 }
 
 .row-check {
@@ -97,8 +104,9 @@ input {
 }
 
 label {
-    color: #2d2e7a;
+    color: #353695;
     font-size: small;
+    font-weight: 500;
 }
 
 input:focus {
@@ -117,4 +125,26 @@ select {
 select:focus {
     outline: none;
     border: 1px solid #3c3e8d;
+}
+
+.btn {
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.btn:active {
+    transform: translateY(4px);
+}
+
+hr {
+    margin-top: -2px;
+    /* background-color: rgba(226, 226, 226, 0.2); */
+}
+
+.card2 {
+    display: none;
+}
+
+ol li {
+    font-size: medium;
 }
