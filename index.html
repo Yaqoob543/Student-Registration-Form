@@ -5,11 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3456/3456426.png">
+    <link rel="icon" href="https://icon-library.com/images/coding-icon-png/coding-icon-png-7.jpg">
     <title>Student Registration Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
@@ -69,8 +68,9 @@
                         <option disabled selected></option>
                         <option >Karachi</option>
                         <option>Lahore</option>
+                        <option>Multan</option>
                         <option >Hyderabad</option>
-                        <option>Islamabad</option>
+                        <option>Islamabad</option>  
                       </select>
                 </div>
                 <div class="col">
@@ -78,10 +78,10 @@
                     <br>
                     <select class="input" id="courses" required>
                         <option disabled selected></option>
-                        <option>Web & Mobile</option>
+                        <option>Web Development</option>
                         <option>Graphic Designing</option>
-                        <option>CCNA ( Certified Computer Operator )</option>
-                        <option>Python Development</option>
+                        <option>CCO( Certified Computer Operator )</option>
+                        <option>Python Programming</option>
                         </select>
                 </div>
             </div>
@@ -89,7 +89,7 @@
                 <div class="col">
                     <label>CNIC</label>
                     <br>
-                    <input placeholder="xxxx-xxxxxxx-x" class="input" type="text" id="cnic">
+                    <input placeholder="xxxxx-xxxxxxx-x" class="input" type="text" id="cnic">
                 </div>
                 <div class="col">
                     <label>Select Gender</label>
@@ -131,7 +131,7 @@
             </div>
             <div class="row-check">
                 <small>
-                        <ol style="width: 80%;" >
+                        <ol style="width: 100%;" >
                             <li> hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
                             <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</li>
                             <li>Defiance will render my admission canceled at any point in time.</li>
@@ -144,18 +144,12 @@
                 </div>
             </div>
             <submit onclick="getData()" type="submit" class="btn btn-primary">Submit</submit>
-
             <center>
                 <button id="adminBtn" onclick="admin()">Login to Admin Portal</button>
             </center>
-
         </form>
-
-
     </div>
-
     <!-- ID Card Download Section HTML -->
-
     <div class="container">
         <div class="card2" id="card">
             <div class="row-check">
@@ -166,14 +160,9 @@
                 </div>
             </div>
             <submit type="submit" id="cardBtns" onclick="checkCard()" class="btn btn-primary">Submit</submit>
-
         </div>
-
-
     </div>
-
     <br>
-
     <!--ID Card Structure-->
     <div class="container id-card-space" id="cardSpace">
         <div class="card id-card">
@@ -185,19 +174,12 @@
             <p id="cardFather">Muhammad Farooq</p>
             <p id="cardCourse">Web & Mobile</p>
             <br>
-
         </div>
         <div class="btns ">
             <button onclick="cardReturn()" class="retBtn1 btn-primary" id="form1">Return Back </button>
             <button class="retBtn1  btn-primary" id="downloadCard">Download Card</button>
         </div>
     </div>
-
-
-
-
-
-
     <div class="container adminSpace" id="adminSpace">
         <div class="admin">
             <h5>Admin Login</h5>
@@ -208,11 +190,10 @@
             <br> <br> <br>
             <button onclick="adminlog()" class="btn btn-primary" id="adminSub">Login</button>
 
+            <center> <a href="/index.html">Back to Registration Form</a></center>
         </div>
 
-
     </div>
-
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://kit.fontawesome.com/2ab38ab271.js" crossorigin="anonymous"></script>

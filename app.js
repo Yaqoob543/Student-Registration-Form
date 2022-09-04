@@ -10,6 +10,8 @@ function idCard() {
 function disform() {
     document.getElementById('form').style.display = 'block'
     document.getElementById('card').style.display = 'none'
+    document.getElementById('cardSpace').style.display = 'none'
+
 
 }
 
@@ -149,6 +151,21 @@ function fetchData() {
 
 function checkCard() {
     var cnic = document.getElementById('cnic2')
+
+    if (cnicReg.test(cnic.value)) {
+        var check = JSON.parse(localStorage.getItem('data'))
+        for (var keys in check) {
+            if (cnic.value !== check[keys].nic) {
+                swal("Student Not Found", "Please Register Yourself First", "error");
+            } else {
+                showCard()
+            }
+        }
+    } else {
+        swal('Kindly Enter Correct Format')
+    }
+
+
     if (cnicReg.test(cnic.value)) {
         showCard()
     } else {
@@ -175,11 +192,11 @@ function showCard() {
             var img = document.getElementById('dp')
             img.src = picture
             var name = document.getElementById('cardName')
-            name.innerText = firstName
+            name.innerText = 'Name : ' + firstName
             var father = document.getElementById('cardFather')
-            father.innerText = fatherName
+            father.innerText = 'Father Name : ' + fatherName
             var coursecheck = document.getElementById('cardCourse')
-            coursecheck.innerText = course
+            coursecheck.innerText = 'Course : ' + course
             break
         }
     }
@@ -193,10 +210,14 @@ function admin() {
 }
 
 
+
+
 function adminlog() {
     var user = document.getElementById('adminName').value
     var pass = document.getElementById('adminPass').value
     if (user === 'admin' && pass === 'admin') {
         window.location.href = '/Admin Panel/admin.html'
+    } else {
+        swal("Invalid Login", "Kindly Enter Correct Credentials", "error");
     }
 }

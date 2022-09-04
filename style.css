@@ -188,7 +188,7 @@ ol li {
 
 .card>p {
     text-align: center;
-    font-size: x-large;
+    font-size: large;
     font-weight: bold;
     /* color: #3c3e8d; */
     color: #353695;
@@ -246,4 +246,45 @@ ol li {
 
 .adminSpace {
     display: none;
+}
+
+tr {
+    border: 2px solid black;
+    text-align: center;
+}
+
+th {
+    border: 2px solid black;
+    text-align: center;
+}
+
+td {
+    border: 2px solid black;
+}
+
+#loader {
+    display: none;
+}
+
+.adminInp {
+    border: none;
+    cursor: pointer;
+    text-align: center;
+}
+
+.adminInp:focus {
+    border: none;
+    cursor: pointer;
+}
+
+#table {
+    width: 120% !important;
+    margin-left: -10%;
+    text-align: center !important;
+}
+
+.del {
+    background-color: white;
+    border: none;
+    /* box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.5); */
 }
