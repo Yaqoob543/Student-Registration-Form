@@ -23,3 +23,50 @@ function del() {
     event.target.parentNode.parentNode.remove()
 
 }
+
+/* 
+function showCard() {
+    var cnic = document.getElementById('cnic2')
+    var check = JSON.parse(localStorage.getItem('data'))
+    console.log(check)
+    for (var keys in check) {
+        if (check[keys].nic === cnic.value) {
+            var picture = check[keys].pic
+            var firstName = check[keys].name
+            var fatherName = check[keys].father
+            var course = check[keys].cor
+            document.getElementById('cardSpace').style.display = 'block'
+            var img = document.getElementById('dp')
+            img.src = picture
+            var name = document.getElementById('cardName')
+            name.innerText = 'Name : ' + firstName
+            var father = document.getElementById('cardFather')
+            father.innerText = 'Father Name : ' + fatherName
+            var coursecheck = document.getElementById('cardCourse')
+            coursecheck.innerText = 'Course : ' + course
+            break
+        }
+    }
+}
+
+function admin() {
+    document.getElementById('card').style.display = 'none'
+    document.getElementById('form').style.display = 'none'
+    document.getElementById('head').style.display = 'none'
+    document.getElementById('adminSpace').style.display = 'block'
+}
+
+
+
+
+function adminlog() {
+    var user = document.getElementById('adminName').value
+    var pass = document.getElementById('adminPass').value
+    if (user === 'admin' && pass === 'admin') {
+        window.location.href = '/Admin Panel/admin.html'
+    } else {
+        swal("Invalid Login", "Kindly Enter Correct Credentials", "error");
+    }
+}
+
+*/
