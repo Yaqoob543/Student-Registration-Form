@@ -184,3 +184,19 @@ function showCard() {
         }
     }
 }
+
+function admin() {
+    document.getElementById('card').style.display = 'none'
+    document.getElementById('form').style.display = 'none'
+    document.getElementById('head').style.display = 'none'
+    document.getElementById('adminSpace').style.display = 'block'
+}
+
+
+function adminlog() {
+    var user = document.getElementById('adminName').value
+    var pass = document.getElementById('adminPass').value
+    if (user === 'admin' && pass === 'admin') {
+        window.location.href = '/Admin Panel/admin.html'
+    }
+}

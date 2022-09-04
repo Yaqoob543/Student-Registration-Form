@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container " id="head">
         <!-- Header Section-->
         <div class="header">
             <div class="content">
@@ -144,6 +144,11 @@
                 </div>
             </div>
             <submit onclick="getData()" type="submit" class="btn btn-primary">Submit</submit>
+
+            <center>
+                <button id="adminBtn" onclick="admin()">Login to Admin Portal</button>
+            </center>
+
         </form>
 
 
@@ -165,9 +170,6 @@
         </div>
 
 
-        <center>
-            <a href="/Admin Panel/admin.html">Login to Admin Panel</a>
-        </center>
     </div>
 
     <br>
@@ -191,6 +193,26 @@
         </div>
     </div>
 
+
+
+
+
+
+    <div class="container adminSpace" id="adminSpace">
+        <div class="admin">
+            <h5>Admin Login</h5>
+            <br>
+            <input type="text" placeholder="admin" id="adminName">
+            <br> <br> <br>
+            <input type="password" id="adminPass">
+            <br> <br> <br>
+            <button onclick="adminlog()" class="btn btn-primary" id="adminSub">Login</button>
+
+        </div>
+
+
+    </div>
+
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <script src="https://kit.fontawesome.com/2ab38ab271.js" crossorigin="anonymous"></script>
@@ -199,5 +221,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="app.js"></script>
 </body>
+
+</html>
 
 </html>
