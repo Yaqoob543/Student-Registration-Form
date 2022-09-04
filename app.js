@@ -13,7 +13,7 @@ function disform() {
 
 }
 
-var nameReg = /^[a-zA-Z] +[a-zA-Z]+$/;
+var nameReg = /^[a-zA-Z]+[a-zA-Z]+$/;
 var emailReg = /^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$/
 var numReg = /^[\+]?[(]?[0-9]{4}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,5}$/
 var addReg = /^[0-9a-zA-Z\s,-]+$/
@@ -99,23 +99,53 @@ function Student(pic, name, father, number, cnic, course, city, ) {
 }
 
 
-var count = 1
+// var count = 1
+
+
+var obj;
 
 function fetchData() {
-    b[`ID# ${count}`] = new Student(pic.value, fullName.value, fatherName.value, number.value, cnic.value, course.value, city.value)
-    localStorage.setItem('data', JSON.stringify(b))
-    console.log(b)
-    count++
+    //     b[`Student ${count}`] = new Student(img, fullName.value, fatherName.value, number.value, cnic.value, course.value, city.value)
+    //     localStorage.setItem('data', JSON.stringify(b))
+    //     console.log(b)
+    //     count++
+    // }
+    var getData = JSON.parse(localStorage.getItem('data'))
+    if (getData === null) {
+        obj = {}
+    } else {
+        obj = getData
+    }
+
+    var fullName = document.getElementById('name').value
+    var fatherName = document.getElementById('father').value
+    var email = document.getElementById('email').value
+    var number = document.getElementById('number').value
+    var city = document.getElementById('city').value
+    var course = document.getElementById('courses').value
+    var cnic = document.getElementById('cnic').value
+    var add = document.getElementById('add').value
+    var qualification = document.getElementById('qualification').value
+    var pic = document.getElementById('picture')
+    var img = URL.createObjectURL(pic.files[0])
+
+
+    obj[fullName] = {
+        name: fullName,
+        father: fatherName,
+        mail: email,
+        num: number,
+        cities: city,
+        cor: course,
+        nic: cnic,
+        addr: add,
+        edu: qualification,
+        pic: img
+    }
+    localStorage.setItem('data', JSON.stringify(obj))
+    console.log(obj)
 }
 
-var a = JSON.parse(localStorage.getItem('data'))
-
-if (a) {
-    var b = a
-} else {
-    var b = {}
-}
-console.log(Object.keys(a).length)
 
 function checkCard() {
     var cnic = document.getElementById('cnic2')
@@ -134,15 +164,16 @@ function cardReturn() {
 function showCard() {
     var cnic = document.getElementById('cnic2')
     var check = JSON.parse(localStorage.getItem('data'))
+    console.log(check)
     for (var keys in check) {
-        if (check[keys].cnic == cnic.value) {
-            var pic = check[keys].pic
+        if (check[keys].nic === cnic.value) {
+            var picture = check[keys].pic
             var firstName = check[keys].name
             var fatherName = check[keys].father
-            var course = check[keys].course
+            var course = check[keys].cor
             document.getElementById('cardSpace').style.display = 'block'
             var img = document.getElementById('dp')
-            img.src = pic
+            img.src = picture
             var name = document.getElementById('cardName')
             name.innerText = firstName
             var father = document.getElementById('cardFather')
