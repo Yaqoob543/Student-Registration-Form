@@ -172,6 +172,11 @@ function checkCard() {
         swal("Invalid CNIC", "Please Enter CNIC Correct Format ", "info");
     }
 }
+//     b[`Student ${count}`] = new Student(img, fullName.value, fatherName.value, number.value, cnic.value, course.value, city.value)
+//     localStorage.setItem('data', JSON.stringify(b))
+//     console.log(b)
+//     count++
+// }
 
 function cardReturn() {
     document.getElementById('cardSpace').style.display = 'none'
