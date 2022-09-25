@@ -19,10 +19,43 @@ for (var keys in getAdmin) {
     score++
 }
 
+
+
 function del() {
-    event.target.parentNode.parentNode.remove()
+    // event.target.parentNode.parentNode.remove()
+    var delOne = event.target.parentNode.parentNode.children[1].firstChild.value
+        // console.log(delOne)
+
+
+
+    // console.log(JSON.parse(localStorage.getItem('data', )))
+    var task = JSON.parse(localStorage.getItem('data'))
+
+    for (var keys in task) {
+        if (task[keys].name === delOne) {
+            console.log(task[keys])
+
+            if (task[keys].name === delOne) {
+                console.log(delOne)
+                var a = JSON.parse(localStorage.getItem('data', getAdmin[keys][name]))
+                console.log(a)
+            }
+            // localStorage.removeItem('data', task[keys].name)
+        }
+        // break
+    }
+
+
+    // console.log(event.target.parentNode.parentNode.children[1])
 
 }
+
+
+
+
+
+
+
 
 /* 
 function showCard() {
