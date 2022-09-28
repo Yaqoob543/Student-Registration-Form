@@ -5,149 +5,194 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Email Authentication</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script src="https://kit.fontawesome.com/2ab38ab271.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="https://icon-library.com/images/coding-icon-png/coding-icon-png-7.jpg">
+    <title>Student Registration Form</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-
-
-
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100">
-                <div class="login100-pic js-tilt" data-tilt>
-                    <img src="images/img-01.png" alt="IMG">
+    <div class="container " id="head">
+        <div class="header">
+            <div class="content">
+                <div class="logo">
+                    <img src="assets/logo.png" alt="">
                 </div>
-
-                <form class="login100-form validate-form" id="form">
-                    <span class="login100-form-title">
-						Member Login
-					</span>
-
-                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="email" placeholder="Email">
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="password" name="pass" placeholder="Password">
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-							<i class="fa fa-lock" aria-hidden="true"></i>
-						</span>
-                    </div>
-
-                    <div class="container-login100-form-btn">
-                        <button class="login100-form-btn">
-							Login
-						</button>
-                    </div>
-
-                    <div class="text-center p-t-12">
-
-                        <a class="txt2" href="#">
-							Forgot Password?
-						</a>
-                    </div>
-
-                    <div class="text-center p-t-136">
-                        <button id="cerAcc">
-                            <a class="txt2" href="#">
-                                Create your Account
-                                <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
-                            </a>
-                        </button>
-                    </div>
-                </form>
-
-                <!--Sign Up Form-->
-
-                <form class="login100-form validate-form signUpForm" id="signUpForm">
-                    <span class="login100-form-title">
-						Member Sign Up
-					</span>
-
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100 " type="text " name="name " id="signUpName " placeholder="Name ">
-                        <span class="focus-input100 "></span>
-                        <span class="symbol-input100 ">
-                        <i class="fa fa-envelope " aria-hidden="true "></i>
-                    </span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input ">
-                        <input class="input100" type="text" name="email" id="signUpEmail" placeholder="Email">
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-							<i class="fa fa-envelope" aria-hidden="true"></i>
-						</span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="password" name="pass" id="signUpPass" placeholder="Password">
-                        <span class="focus-input100"></span>
-                        <span class="symbol-input100">
-                        <i class="fa fa-lock" aria-hidden="true"></i>
-                    </span>
-                    </div>
-
-                    <div class="wrap-input100 validate-input">
-                        <input class="input100" type="text" id="dob" onfocus="(this.type='date')" onblur="(this.type='text')" name=" DOB " id='dob' placeholder="Date of Birth ">
-                        <span class=" focus-input100 "></span>
-                        <span class="symbol-input100 ">
-                    <i class="fa fa-birthday-cake " aria-hidden="true "></i>
-                </span>
-                    </div>
-                    <div class="wrap-input100 validate-input " data-validate="Password is required ">
-                        <input class="input100 " type="text " name="Qualification" id="qualify" placeholder="Last Qualification ">
-                        <span class="focus-input100 "></span>
-                        <span class="symbol-input100 ">
-                    <i class="fa fa-graduation-cap " aria-hidden="true "></i>
-                </span>
-                    </div>
-
-                    <div class="container-login100-form-btn ">
-                        <button class="login100-form-btn" id="registerUser">
-							Sign Up
-						</button>
-                    </div>
-
-                    <div class="text-center p-t-136 ">
-                        <button id="reg">
-                        <a class="txt2 " href="#" id="login">
-							Already Have an Account ? Login 
-							<i class="fa fa-long-arrow-right m-l-5 " aria-hidden="true "></i>
-						</a>
-                    </button>
-                    </div>
-                </form>
-
-
+                <div class="course">
+                    <p>Course Registration Form</p>
+                </div>
+                <div class="slogan">
+                    <small>Services - Education - Registration</small>
+                </div>
             </div>
         </div>
+        <br>
+        <div class="btns">
+            <button onclick="disform()" class="btn1" id="form1">New Application</button>
+            <button onclick="idCard()" class="btn1" id="downloadCard">Download ID Card</button>
+        </div>
+        <hr>
+        <form id="form">
+            <div class="row-check">
+                <div class="col">
+                    <label>Full Name</label>
+                    <br>
+                    <input class="input" id="name" placeholder="Full Name" type="text">
+                </div>
+                <div class="col">
+                    <label>Father Name</label>
+                    <br>
+                    <input class="input" id="father" placeholder="Father Name" type="text">
+                </div>
+            </div>
+            <div class="row-check">
+                <div class="col">
+                    <label>Email Address</label>
+                    <br>
+                    <input placeholder="Email Address" id="email" class="input" type="text">
+                </div>
+                <div class="col">
+                    <label>Phone</label>
+                    <br>
+                    <input placeholder="Format : 03xxxxxxxxx" id="number" class="input" type="text">
+                </div>
+            </div>
+            <div class="row-check">
+                <div class="col">
+                    <label>Select City</label>
+                    <br>
+                    <select id="city" class="input" required>
+                        <option disabled selected></option>
+                        <option >Karachi</option>
+                        <option>Lahore</option>
+                        <option>Multan</option>
+                        <option >Hyderabad</option>
+                        <option>Islamabad</option>  
+                      </select>
+                </div>
+                <div class="col">
+                    <label>Select Course</label>
+                    <br>
+                    <select class="input" id="courses" required>
+                        <option disabled selected></option>
+                        <option>Web Development</option>
+                        <option>Graphic Designing</option>
+                        <option>CCO( Certified Computer Operator )</option>
+                        <option>Python Programming</option>
+                        </select>
+                </div>
+            </div>
+            <div class="row-check">
+                <div class="col">
+                    <label>CNIC</label>
+                    <br>
+                    <input placeholder="xxxxx-xxxxxxx-x" class="input" type="text" id="cnic">
+                </div>
+                <div class="col">
+                    <label>Select Gender</label>
+                    <br>
+                    <select id="gender" class="input">
+                        <option disabled selected ></option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row-check">
+                <div class="col">
+                    <label>Address</label>
+                    <br>
+                    <input placeholder="Address" class="input" type="text" id="add">
+                </div>
+            </div>
+            <div class="col">
+                <label>Last Qualification</label>
+                <br>
+                <select id="qualification" class="input" required>
+                    <option disabled selected ></option>
+                    <option>Matric</option>
+                    <option>Intermediate</option>
+                    <option>Under Graduate</option>
+                    <option>Graduate</option>
+                    <option>Masters</option>
+                </select>
+            </div>
+            <div class="row-check">
+                <div class="col">
+                    <label>Picture</label>
+                    <br>
+                    <input class="input file" name="path" id="picture" type="file">
+
+                </div>
+            </div>
+            <div class="row-check">
+                <small> <ol style="width: 100%;" >
+                            <li> hereby, solemnly declare that the data and facts mentioned herein are true and correct to the best of my knowledge. Further, I will abide by all the established and future regulations and policies of SWIT</li>
+                            <li>I hereby accept the responsibilities of good conduct and guarantee that I will not be involved in any other activity, political or ethical, but learning during my stay in the program.</li>
+                            <li>Defiance will render my admission canceled at any point in time.</li>
+                            <li>Upon completion, of the course, I will complete the required project by SWIT.</li>
+                </ol></small>
+            </div>
+            <div class="row-check">
+                <div class="col">
+                </div>
+            </div>
+            <submit onclick="getData()" type="submit" class="btn btn-primary">Submit</submit>
+            <center>
+                <button id="adminBtn" onclick="admin()">Login to Admin Portal</button>
+            </center>
+        </form>
     </div>
+    <div class="container">
+        <div class="card2" id="card">
+            <div class="row-check">
+                <div class="col">
+                    <label>CNIC</label>
+                    <br>
+                    <input placeholder="xxxx-xxxxxxx-x" class="input" type="text" id="cnic2">
+                </div>
+            </div>
+            <submit type="submit" id="cardBtns" onclick="checkCard()" class="btn btn-primary">Submit</submit>
+        </div>
+    </div>
+    <br>
+    <div class="container id-card-space" id="cardSpace">
+        <div class="card id-card">
+            <div class="dp">
+                <img id="dp" src="/assets/bg1.jpg" alt="">
+            </div>
+            <p id="cardName">Sualeh Farooq</p>
+            <p id="cardFather">Muhammad Farooq</p>
+            <p id="cardCourse">Web & Mobile</p>
+            <br>
+        </div>
+        <div class="btns ">
+            <button onclick="cardReturn()" class="retBtn1 btn-primary" id="form1">Return Back </button>
+            <button class="retBtn1  btn-primary" id="downloadCard">Download Card</button>
+        </div>
+    </div>
+    <div class="container adminSpace" id="adminSpace">
+        <div class="admin">
+            <h5>Admin Login</h5>
+            <br>
+            <input type="text" placeholder="admin" id="adminName">
+            <br> <br> <br>
+            <input type="password" id="adminPass">
+            <br> <br> <br>
+            <button onclick="adminlog()" class="btn btn-primary" id="adminSub">Login</button>
+            <center> <a href="/index.html">Back to Registration Form</a></center>
+        </div>
 
-
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js " integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js " integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js " integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6 " crossorigin="anonymous "></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
-    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js " integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc " crossorigin="anonymous "></script>
-    <script src="https://kit.fontawesome.com/2ab38ab271.js " crossorigin="anonymous "></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js " integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa " crossorigin="anonymous "></script>
-    <script src="app.js" type="module"></script>
+    <script src="https://kit.fontawesome.com/2ab38ab271.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
 </body>
+
+</html>
 
 </html>
